@@ -42,26 +42,81 @@
           </ul>
         </address>
       </div>
-      <div>
-        <form action="#">
-          <p>Leave your contacts and we will call you back</p>
-          <div>
-            <svg>
-              <use href="images/icons.svg#icon-name"></use>
-            </svg>
-            <label class="contact-form" for="user-name">Name</label>
-            <input type="text" name="user-name" id="user-name" />
-          </div>
-          <div>
-            <svg>
-              <use href="images/icons.svg# icon-phone"></use>
-            </svg>
-            <label class="contact-form" for="user-phone">Phone</label>
-            <input type="tel" name="user-phone" id="user-phone" />
-          </div>
-
-          <label for=""></label>
-        </form>
+      <div class="modal">
+        <div class="modal-content">
+          <svg class="close-icons">
+            <use href="images/icons.svg#icon-close"></use>
+          </svg>
+          <p><b>Leave your contacts and we will call you back</b></p>
+          <form action="#">
+            <div class="name-content">
+              <label class="contact-label" for="user-name">Name</label>
+              <input
+                class="contact-form"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="contact-icons" id="person">
+                <use href="images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+            <div class="phone-content">
+              <label class="contact-label" for="user-phone">Phone</label>
+              <input
+                class="contact-form"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+              />
+              <svg class="contact-icons">
+                <use href="images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <div class="mail-content">
+              <label class="contact-label" for="e-mail">Email</label>
+              <input
+                class="contact-form"
+                type="email"
+                name="e-mail"
+                id="e-mail"
+              />
+              <svg class="contact-icons">
+                <use href="images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+            <div class="comment-content">
+              <label class="contact-label" for="comment">Comment</label>
+              <textarea
+                class="contact-comment"
+                name="comment"
+                id="comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" name="checkbox" id="check-box" />
+              <label class="check-label" for="check-box">
+                <svg class="click-icon">
+                  <use href="images/icons.svg#icon-checkbox"></use>
+                </svg>
+                <p>
+                  I accept the terms and conditions of the &nbsp;<a
+                    href="#"
+                    class="privacy-policy"
+                    >Privacy Policy</a
+                  >
+                </p>
+              </label>
+            </div>
+            <input
+              type="submit"
+              name="send-button"
+              id="send-button"
+              value="Send"
+            />
+          </form>
+        </div>
       </div>
     </header>
 
@@ -402,6 +457,26 @@
           <svg class="footer-icons icon-footer">
             <use href="images/icons.svg#icon-footerlinkedin"></use>
           </svg>
+        </div>
+        <div class="footer-subs">
+          <form action="#">
+            <label class="footer-label" for="footer-mail">Subscribe</label>
+            <input
+              type="email"
+              name="footer-mail"
+              id="footer-mail"
+              placeholder="E-mail"
+            />
+            <input
+              type="submit"
+              name="subs-button"
+              id="subs-button"
+              value="Subscribe"
+            />
+            <svg class="footer-button">
+              <use href="images/icons.svg#icon-subscribe"></use>
+            </svg>
+          </form>
         </div>
       </div>
     </footer>
